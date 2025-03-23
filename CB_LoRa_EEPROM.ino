@@ -230,11 +230,11 @@ void loop() {
 
     eeprom.write(currentAddress, dados.seconds);
     currentAddress += 4;
-    eeprom.write(currentAddress, dados.temperatura);
+    eeprom.write(currentAddress, dados.temperatureBME);
     currentAddress += 4;
-    eeprom.write(currentAddress, dados.umidade);
+    eeprom.write(currentAddress, dados.humidityDHT);
     currentAddress += 4;
-    eeprom.write(currentAddress, dados.pressao);
+    eeprom.write(currentAddress, dados.pressure);
     currentAddress += 4;
     eeprom.write(currentAddress, dados.altitude);
     currentAddress += 4;
